@@ -317,14 +317,22 @@ mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
 console.log("Started game")
 tiles.setCurrentTilemap(tilemap`level1`)
 if (mp.isConnected(mp.playerSelector(mp.PlayerNumber.One))) {
+	
+} else {
     mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.One))
 }
 if (mp.isConnected(mp.playerSelector(mp.PlayerNumber.Two))) {
+	
+} else {
     mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Two))
 }
 if (mp.isConnected(mp.playerSelector(mp.PlayerNumber.Three))) {
+	
+} else {
     mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Three))
 }
 if (mp.isConnected(mp.playerSelector(mp.PlayerNumber.Four))) {
+	
+} else {
     mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Four))
 }
