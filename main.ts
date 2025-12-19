@@ -18,4 +18,8 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 tiles.setCurrentTilemap(tilemap`level1`)
 controller.moveSprite(mySprite)
+let statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 scene.cameraFollowSprite(mySprite)
+statusbar.setBarBorder(1, 15)
+statusbar.setStatusBarFlag(StatusBarFlag.SmoothTransition, true)
+statusbar.attachToSprite(mySprite)
